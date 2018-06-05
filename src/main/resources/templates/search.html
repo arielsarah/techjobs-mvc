@@ -35,7 +35,9 @@
     </form>
 
     <hr />
-
+    <div>
+        <h3 th:unless="${jobssize==null}" th:text="${jobssize} + ' Result(s)'">Text</h3>
+    </div>
     <!-- TODO #2 - Loop over jobs map to display all job fields -->
     <div th:replace="fragments :: results"></div>
 
